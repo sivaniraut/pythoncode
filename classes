@@ -1,0 +1,14 @@
+class Date:
+    """ Day / month/ year"""
+    def __init__(self, day, momth, year) -> None:
+        self.dd = day
+        self.mm = momth
+        self.yy = year
+
+    def get_date(self):
+        return "{}/{}/{}".format(
+            self.dd, self.mm, self.yy)
+
+
+today_date = Date(8, 5, 2023)
+print(today_date.get_date())
